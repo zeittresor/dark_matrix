@@ -2,6 +2,8 @@
 
 A local Firefox extension that transforms regular websites into a **Matrix-inspired dark mode** with dark backgrounds, green outlines, neon glow, elegant panels, and optional scanline effects.
 
+<img width="481" height="433" alt="want_a_matrix_style_darkmode" src="https://github.com/user-attachments/assets/87fec10a-5952-4adc-8e33-13318211efc9" />
+
 ---
 
 ## Languages
