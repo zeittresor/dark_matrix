@@ -1,0 +1,228 @@
+html[data-matrix-dark-ext="on"] {
+  --matrix-bg: #030805;
+  --matrix-bg-soft: rgba(2, 12, 5, 0.92);
+  --matrix-bg-strong: rgba(3, 17, 8, 0.96);
+  --matrix-panel: rgba(5, 18, 10, 0.92);
+  --matrix-panel-2: rgba(6, 24, 12, 0.94);
+  --matrix-text: #bdf8cb;
+  --matrix-text-dim: #88d69f;
+  --matrix-accent: #4cff88;
+  --matrix-accent-2: #7dffb5;
+  --matrix-link: #8fffc0;
+  --matrix-link-visited: #67ffc4;
+  --matrix-border: rgba(76, 255, 136, var(--matrix-border-alpha, 0.38));
+  --matrix-glow-shadow: 0 0 calc(12px * var(--matrix-glow, 0.58)) rgba(76, 255, 136, 0.24),
+    0 0 calc(28px * var(--matrix-glow, 0.58)) rgba(76, 255, 136, 0.08);
+  --matrix-radius-safe: var(--matrix-radius, 12px);
+  color-scheme: dark !important;
+  background: var(--matrix-bg) !important;
+  scrollbar-color: rgba(76, 255, 136, 0.7) rgba(0, 0, 0, 0.4) !important;
+}
+
+html[data-matrix-dark-ext="on"] body {
+  background:
+    radial-gradient(circle at top, rgba(55, 255, 120, 0.045), transparent 38%),
+    linear-gradient(180deg, rgba(4, 16, 8, 0.98), rgba(1, 5, 2, 1)) !important;
+  color: var(--matrix-text) !important;
+  min-height: 100vh !important;
+  position: relative !important;
+}
+
+html[data-matrix-dark-ext="on"] body::before,
+html[data-matrix-dark-ext="on"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
+html[data-matrix-dark-ext="on"] body::before {
+  background: radial-gradient(circle at center, rgba(40, 255, 114, 0.055), transparent 62%);
+  z-index: 2147483640;
+}
+
+html[data-matrix-dark-ext="on"][data-matrix-scanlines="on"] body::after {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(130, 255, 170, 0.028) 0px,
+    rgba(130, 255, 170, 0.028) 1px,
+    rgba(0, 0, 0, 0) 3px,
+    rgba(0, 0, 0, 0) 4px
+  );
+  opacity: 0.35;
+  z-index: 2147483641;
+}
+
+html[data-matrix-dark-ext="on"],
+html[data-matrix-dark-ext="on"] body,
+html[data-matrix-dark-ext="on"] main,
+html[data-matrix-dark-ext="on"] section,
+html[data-matrix-dark-ext="on"] article,
+html[data-matrix-dark-ext="on"] aside,
+html[data-matrix-dark-ext="on"] nav,
+html[data-matrix-dark-ext="on"] header,
+html[data-matrix-dark-ext="on"] footer,
+html[data-matrix-dark-ext="on"] div,
+html[data-matrix-dark-ext="on"] ul,
+html[data-matrix-dark-ext="on"] ol,
+html[data-matrix-dark-ext="on"] li,
+html[data-matrix-dark-ext="on"] table,
+html[data-matrix-dark-ext="on"] thead,
+html[data-matrix-dark-ext="on"] tbody,
+html[data-matrix-dark-ext="on"] tfoot,
+html[data-matrix-dark-ext="on"] tr,
+html[data-matrix-dark-ext="on"] td,
+html[data-matrix-dark-ext="on"] th,
+html[data-matrix-dark-ext="on"] pre,
+html[data-matrix-dark-ext="on"] code,
+html[data-matrix-dark-ext="on"] blockquote,
+html[data-matrix-dark-ext="on"] form,
+html[data-matrix-dark-ext="on"] fieldset,
+html[data-matrix-dark-ext="on"] dialog {
+  border-color: var(--matrix-border) !important;
+}
+
+html[data-matrix-dark-ext="on"] [data-matrix-panel="1"],
+html[data-matrix-dark-ext="on"] [data-matrix-bg-rewrite="1"],
+html[data-matrix-dark-ext="on"] table,
+html[data-matrix-dark-ext="on"] thead,
+html[data-matrix-dark-ext="on"] tbody,
+html[data-matrix-dark-ext="on"] tfoot,
+html[data-matrix-dark-ext="on"] tr,
+html[data-matrix-dark-ext="on"] td,
+html[data-matrix-dark-ext="on"] th,
+html[data-matrix-dark-ext="on"] pre,
+html[data-matrix-dark-ext="on"] blockquote,
+html[data-matrix-dark-ext="on"] dialog,
+html[data-matrix-dark-ext="on"] details,
+html[data-matrix-dark-ext="on"] form,
+html[data-matrix-dark-ext="on"] fieldset,
+html[data-matrix-dark-ext="on"] button,
+html[data-matrix-dark-ext="on"] input,
+html[data-matrix-dark-ext="on"] textarea,
+html[data-matrix-dark-ext="on"] select {
+  background: linear-gradient(180deg, var(--matrix-panel), var(--matrix-panel-2)) !important;
+  color: var(--matrix-text) !important;
+  border: 1px solid var(--matrix-border) !important;
+  border-radius: var(--matrix-radius-safe) !important;
+  box-shadow: var(--matrix-glow-shadow) !important;
+}
+
+html[data-matrix-dark-ext="on"] h1,
+html[data-matrix-dark-ext="on"] h2,
+html[data-matrix-dark-ext="on"] h3,
+html[data-matrix-dark-ext="on"] h4,
+html[data-matrix-dark-ext="on"] h5,
+html[data-matrix-dark-ext="on"] h6 {
+  color: var(--matrix-accent-2) !important;
+  text-shadow: 0 0 calc(8px * var(--matrix-glow, 0.58)) rgba(76, 255, 136, 0.18) !important;
+}
+
+html[data-matrix-dark-ext="on"] p,
+html[data-matrix-dark-ext="on"] span,
+html[data-matrix-dark-ext="on"] li,
+html[data-matrix-dark-ext="on"] dt,
+html[data-matrix-dark-ext="on"] dd,
+html[data-matrix-dark-ext="on"] label,
+html[data-matrix-dark-ext="on"] td,
+html[data-matrix-dark-ext="on"] th,
+html[data-matrix-dark-ext="on"] strong,
+html[data-matrix-dark-ext="on"] em,
+html[data-matrix-dark-ext="on"] small,
+html[data-matrix-dark-ext="on"] cite,
+html[data-matrix-dark-ext="on"] summary,
+html[data-matrix-dark-ext="on"] time,
+html[data-matrix-dark-ext="on"] figcaption {
+  color: var(--matrix-text) !important;
+}
+
+html[data-matrix-dark-ext="on"] a,
+html[data-matrix-dark-ext="on"] a * {
+  color: var(--matrix-link) !important;
+  text-decoration-color: rgba(125, 255, 181, 0.48) !important;
+}
+
+html[data-matrix-dark-ext="on"] a:visited,
+html[data-matrix-dark-ext="on"] a:visited * {
+  color: var(--matrix-link-visited) !important;
+}
+
+html[data-matrix-dark-ext="on"] a:hover,
+html[data-matrix-dark-ext="on"] button:hover,
+html[data-matrix-dark-ext="on"] input:hover,
+html[data-matrix-dark-ext="on"] textarea:hover,
+html[data-matrix-dark-ext="on"] select:hover {
+  box-shadow:
+    0 0 calc(18px * var(--matrix-glow, 0.58)) rgba(125, 255, 181, 0.28),
+    0 0 calc(38px * var(--matrix-glow, 0.58)) rgba(76, 255, 136, 0.12) !important;
+}
+
+html[data-matrix-dark-ext="on"] hr {
+  border: none !important;
+  border-top: 1px solid var(--matrix-border) !important;
+  box-shadow: 0 0 10px rgba(76, 255, 136, 0.18) !important;
+}
+
+html[data-matrix-dark-ext="on"] input::placeholder,
+html[data-matrix-dark-ext="on"] textarea::placeholder {
+  color: var(--matrix-text-dim) !important;
+}
+
+html[data-matrix-dark-ext="on"] ::selection {
+  background: rgba(76, 255, 136, 0.28) !important;
+  color: #effff2 !important;
+}
+
+html[data-matrix-dark-ext="on"] img,
+html[data-matrix-dark-ext="on"] svg,
+html[data-matrix-dark-ext="on"] video,
+html[data-matrix-dark-ext="on"] canvas,
+html[data-matrix-dark-ext="on"] picture,
+html[data-matrix-dark-ext="on"] iframe {
+  background: transparent !important;
+  box-shadow: 0 0 16px rgba(76, 255, 136, 0.12) !important;
+}
+
+html[data-matrix-dark-ext="on"] img,
+html[data-matrix-dark-ext="on"] video,
+html[data-matrix-dark-ext="on"] canvas,
+html[data-matrix-dark-ext="on"] picture,
+html[data-matrix-dark-ext="on"] svg image {
+  filter: brightness(0.94) contrast(1.05) !important;
+}
+
+html[data-matrix-dark-ext="on"] *::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+html[data-matrix-dark-ext="on"] *::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+html[data-matrix-dark-ext="on"] *::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(76, 255, 136, 0.85), rgba(76, 255, 136, 0.55)) !important;
+  border: 1px solid rgba(0, 0, 0, 0.48) !important;
+  border-radius: 999px !important;
+}
+
+html[data-matrix-dark-ext="on"] * {
+  caret-color: var(--matrix-accent) !important;
+}
+
+html[data-matrix-dark-ext="on"] [style*="background-image"] {
+  filter: brightness(0.72) saturate(0.84) !important;
+}
+
+
+html[data-matrix-dark-ext="on"] [data-matrix-bg-rewrite="1"] {
+  background-color: var(--matrix-panel) !important;
+  background-image: linear-gradient(180deg, var(--matrix-panel), var(--matrix-panel-2)) !important;
+}
+
+html[data-matrix-dark-ext="on"] [data-matrix-panel="1"]:hover,
+html[data-matrix-dark-ext="on"] [data-matrix-bg-rewrite="1"]:hover {
+  box-shadow:
+    0 0 calc(18px * var(--matrix-glow, 0.58)) rgba(125, 255, 181, 0.22),
+    0 0 calc(38px * var(--matrix-glow, 0.58)) rgba(76, 255, 136, 0.10) !important;
+}

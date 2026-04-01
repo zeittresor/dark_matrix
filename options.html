@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Matrix Dark Web – Optionen</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="ui-shell options-shell">
+  <main class="card options-card">
+    <header class="title-row options-title">
+      <div>
+        <h1>Matrix Dark Web</h1>
+        <p class="sub">Optik feinjustieren und Domains ausschließen</p>
+      </div>
+      <div class="pill">Firefox</div>
+    </header>
+
+    <section class="grid">
+      <label class="field card-soft">
+        <span>Glow-Intensität</span>
+        <input id="glow" type="range" min="0" max="1" step="0.01">
+        <strong id="glowValue">0.58</strong>
+      </label>
+
+      <label class="field card-soft">
+        <span>Rahmen-Intensität</span>
+        <input id="border" type="range" min="0" max="1" step="0.01">
+        <strong id="borderValue">0.38</strong>
+      </label>
+
+      <label class="field card-soft">
+        <span>Rundungen</span>
+        <input id="roundness" type="range" min="0" max="24" step="1">
+        <strong id="roundnessValue">12 px</strong>
+      </label>
+
+      <label class="field field-inline card-soft">
+        <span>Scanlines anzeigen</span>
+        <input id="scanlines" type="checkbox">
+      </label>
+    </section>
+
+    <section class="card-soft text-block">
+      <label for="excludedDomains"><strong>Ausgeschlossene Domains</strong></label>
+      <p class="sub tight">Eine Domain pro Zeile. Unterstützt auch <code>*.beispiel.de</code>.</p>
+      <textarea id="excludedDomains" rows="10" spellcheck="false"></textarea>
+    </section>
+
+    <div class="button-row wide">
+      <button id="save" class="btn" type="button">Speichern</button>
+      <button id="reset" class="btn secondary" type="button">Standardwerte</button>
+      <span id="saveState" class="save-state"></span>
+    </div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Matrix Dark Web</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body class="ui-shell">
+  <main class="card popup-card">
+    <div class="title-row">
+      <div>
+        <h1>Matrix Dark Web</h1>
+        <p class="sub">Grüner Matrix-Look für Webseiten</p>
+      </div>
+      <div class="status-dot" id="statusDot"></div>
+    </div>
+
+    <label class="switch-row">
+      <span>Erweiterung aktiv</span>
+      <input id="masterToggle" type="checkbox">
+    </label>
+
+    <section class="mini-panel">
+      <div class="mini-label">Aktuelle Domain</div>
+      <div id="currentHost" class="host-box">–</div>
+      <button id="siteToggle" class="btn secondary" type="button">Für diese Domain deaktivieren</button>
+    </section>
+
+    <div class="button-row">
+      <button id="openOptions" class="btn" type="button">Optionen</button>
+      <button id="refreshNow" class="btn secondary" type="button">Neu anwenden</button>
+    </div>
+
+    <p id="hint" class="hint"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

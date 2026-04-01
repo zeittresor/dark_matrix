@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Matrix Dark Web",
+  "version": "1.0.2",
+  "description": "Gibt Webseiten lokal einen eleganten Matrix-inspirierten Dark-Mode mit grünen Konturen, Glow und scanline-artiger Optik.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_title": "Matrix Dark Web",
+    "default_popup": "popup.html"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "css": [
+        "matrix.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start",
+      "all_frames": true,
+      "match_about_blank": false
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "matrix-dark-web@local",
+      "strict_min_version": "109.0"
+    }
+  }
+}
