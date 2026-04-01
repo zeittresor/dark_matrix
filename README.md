@@ -11,6 +11,9 @@ Example Page:
 
 <img width="481" height="433" alt="want_a_matrix_style_darkmode" src="https://github.com/user-attachments/assets/87fec10a-5952-4adc-8e33-13318211efc9" />
 
+<br><br>
+btw. the idea for this Firefox Extension is not by myself it was the output of my complete different project https://github.com/zeittresor/OllamaVibeDesk in a auto-answer question infinity-round last night. :-)
+
 ---
 
 ## Languages
