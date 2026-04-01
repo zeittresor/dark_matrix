@@ -17,7 +17,7 @@ A local Firefox extension that transforms regular websites into a **Matrix-inspi
 # English
 
 ## Overview
-**Matrix Dark Web for Firefox** is a local browser extension that applies a cyber-green, Matrix-like dark theme to many websites directly in Firefox.
+**Dark Matrix for Firefox** is a local browser extension that applies a cyber-green, Matrix-like dark theme to many websites directly in Firefox.
 
 ### Features
 - dark background styling
@@ -73,7 +73,7 @@ If Firefox says the package is damaged or cannot be installed, this is commonly 
 # Deutsch
 
 ## Übersicht
-**Matrix Dark Web für Firefox** ist eine lokale Browser-Erweiterung, die viele Webseiten direkt in Firefox in einen **Matrix-inspirierten Dark Mode** mit dunklen Hintergründen, grünen Umrandungen, Glow-Effekten und eleganten Panels verwandelt.
+**Dark Matrix für Firefox** ist eine lokale Browser-Erweiterung, die viele Webseiten direkt in Firefox in einen **Matrix-inspirierten Dark Mode** mit dunklen Hintergründen, grünen Umrandungen, Glow-Effekten und eleganten Panels verwandelt.
 
 ### Funktionen
 - dunkle Hintergrundgestaltung
