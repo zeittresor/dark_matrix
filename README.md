@@ -1,4 +1,4 @@
-# Matrix Dark Web for Firefox / source: github.com/zeittresor/dark_matrix
+# Matrix Dark Web for Firefox
 
 A local Firefox extension that transforms regular websites into a **Matrix-inspired dark mode** with dark backgrounds, green outlines, neon glow, elegant panels, and optional scanline effects.
 
@@ -233,3 +233,6 @@ Si Firefox indique que le paquet est endommagé ou ne peut pas être installé, 
 - Внутренние страницы Firefox нельзя изменить.
 - Некоторые очень динамичные сайты могут потребовать дополнительных правил.
 - Необычные макеты отдельных сайтов могут потребовать ручной настройки.
+
+
+## Source: github.com/zeittresor/dark_matrix
